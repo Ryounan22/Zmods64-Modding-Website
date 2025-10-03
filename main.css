@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(/Fonts/PlayfairDisplay-Regular.ttf);
+}
+body {
+  margin: 0;
+  font-family: 'Playfair Display', sans-serif;
+}
+.menunav {
+  overflow: hidden;
+  background-color: #333;
+}
+.menunav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 7px 9px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.menunav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.menunav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.modnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.modnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 7px 9px;
+  text-decoration: none;
+  font-size: 12px;
+}
+.modnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+}
+.img-container {
+  display: inline-block;
+  overflow: hidden; 
+}
+
+.img-container img {
+  transition: transform 0.3s ease; 
+  transform-origin: center;
+}
+
+.img-container img:hover {
+  transform: scale(1.1); 
+  transform-origin: center;
+}
+form {
+    background-color: black;
+}
+h1 {
+  text-align: center
+}
+footer {
+  background: #222;               /* dark background */
+  color: #fff;                    /* white text */
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #4CAF50;                 /* green links */
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #81C784;                 /* lighter green on hover */
+}
+
+footer .footer-nav {
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 5px 0 0;
+  font-size: 0.8em;
+  color: #aaa;                    /* lighter gray text */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Fix modnav - make it scrollable horizontally */
+  .modnav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .modnav a {
+    display: inline-block;
+    float: none;
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+  
+  /* Fix menunav - slim and clean */
+  .menunav {
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    min-height: auto;
+  }
+  
+  .menunav a {
+    float: none;
+    padding: 10px 14px;
+    flex-shrink: 0;
+  }
+  
+  .search-box {
+    position: relative;
+    margin-left: auto !important;
+    margin-top: 0 !important;
+    display: flex;
+    padding: 5px 10px;
+  }
+  
+  .search-box input {
+    width: 140px;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}

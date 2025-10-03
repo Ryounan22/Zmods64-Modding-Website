@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zmods64 Modding</title>
+  <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="Main Page.css">
+</head>
+<body>
+  
+  <header>
+  <secton>
+    <div class="modnav">
+    <a class="active" href="index.html">Home</a>
+    <span id="modnav-categories"></span>
+    </div>
+  </secton>
+
+  <section>
+    <p></p>
+    <div style="text-align: center;">
+      <a href="index.html">
+      <img src="Images/20230218_200707.png" alt="Centered Image" style="width:350px;height:70px;">
+      </a>
+    </div>
+    <p></p>
+  </section>
+  
+  <section>
+    <div class="menunav">
+      <a class="active" href="index.html">Home</a>
+      <a href="faqs.html">FAQs</a>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search mods...">
+    </div>
+    </div>
+  </section>
+  </header>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Posts will be inserted here automatically -->
+      <section class="post-list"></section>
+
+      <!-- Sidebar (Desktop only - will be hidden on mobile) -->
+      <aside class="sidebar sidebar-desktop">
+        <div class="widget">
+          <h3>Socials</h3>
+          <ul>
+            <li><a href="https://www.youtube.com/@Zmods64Modding">Youtube</a></li>
+            <li><a href="https://www.gtainside.de/user/Zmods64">GTAInside</a></li>
+            <li><a href="https://www.facebook.com/keinan90114">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="widget" id="latest-post-widget">
+        <h3>Latest Mod!</h3>
+        <div class="latest-post"></div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="pagination"></div>
+    
+    <!-- Sidebar (Mobile only - appears after pagination) -->
+    <aside class="sidebar sidebar-mobile">
+      <div class="widget">
+        <h3>Socials</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@Zmods64Modding">Youtube</a></li>
+          <li><a href="https://www.gtainside.de/user/Zmods64">GTAInside</a></li>
+          <li><a href="https://www.facebook.com/keinan90114">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="widget" id="latest-post-widget-mobile">
+      <h3>Latest Mod!</h3>
+      <div class="latest-post"></div>
+      </div>
+    </aside>
+    
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="https://www.facebook.com/keinan90114">Facebook</a> |
+      <a href="https://www.youtube.com/@Zmods64Modding">Youtube</a> |
+      <a href="https://www.gtainside.de/user/Zmods64">GTAInside</a>
+    </div>
+      <p>&copy; Zmods64 Modding.</p>
+  </footer>
+
+  <!-- Script to load posts -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+.post {
+  border: none; /* Remove the default border */
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #fff; /* Use a white background */
+}
+
+.post header {
+  margin-bottom: 20px;
+  text-align: left; /* Align header text to the left */
+  border-bottom: 1px solid #eee; /* Add a subtle bottom border */
+  padding-bottom: 10px;
+}
+
+.post h2 {
+  margin-top: 0;
+  color: #222; /* Darker color for the title */
+  font-size: 1.75em; /* Larger font size for the title */
+  font-weight: 600; /* Semi-bold font weight */
+}
+
+.post-meta {
+  color: #666; /* Darker color for metadata */
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.post-content {
+  line-height: 1.7; /* Improved line height for readability */
+  margin-bottom: 20px;
+}
+
+.post-content p {
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
+.post footer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.post-label a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s ease; /* Add transition for link color */
+}
+
+.post-label a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker color on hover */
+}
+.downloadtext {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+.img-container {
+  text-align: center;   /* centers inline images */
+  margin: 15px 0;       /* spacing above/below */
+}
+.img-container img {
+  display: block-inline; /* inline-block to center */
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.img-container img:hover {
+  transform: scale(1.1); 
+}
+.download-btn {
+  background-color: #4CAF50;  /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.btn-container {
+text-align: center; /* This centers the inline-block button */
+}
+.video-container {
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 8px;              /* optional: rounded edges */
+}
+
+.video-container iframe {
+  width: 450px;                    /* set default width */
+  height: 300px;                   /* set default height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.video-container iframe:hover {
+  transform: scale(1.05);          /* zoom effect */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* 3D shadow effect */
+}
