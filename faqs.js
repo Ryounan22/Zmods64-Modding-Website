@@ -1,11 +1,20 @@
-// 🔹 Load posts first
+// Toggle FAQ answers
+function toggleAnswer(element) {
+  element.classList.toggle('active');
+  const answer = element.nextElementSibling;
+  answer.classList.toggle('show');
+}
+
+// Load posts for category navigation
+let allPosts = [];
+
 fetch("posts.json")
   .then(res => res.json())
   .then(posts => {
-    // Store posts globally if needed
+    // Store posts globally
     allPosts = posts;
 
-    // 🔹 Top nav categories
+    // Build top nav categories
     const categoryDates = {};
     posts.forEach(post => {
       post.categories.forEach(cat => {
@@ -26,8 +35,12 @@ fetch("posts.json")
         .map(cat => `<a href="category.html?cat=${encodeURIComponent(cat)}">${cat}</a>`)
         .join("");
     }
-
-    // Render posts initially
-    renderPosts(posts);
   })
-  .catch(err => console.error("Error loading posts:", err));
+  .catch(err => {
+    console.error("Error loading posts:", err);
+    // Don't break the FAQ functionality if posts.json fails to load
+    const navContainer = document.getElementById("modnav-categories");
+    if (navContainer) {
+      navContainer.innerHTML = '<span style="color: #999;">Categories unavailable</span>';
+    }
+  });
